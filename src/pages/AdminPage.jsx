@@ -187,7 +187,7 @@ function AdminPage() {
                 return (
                   <tr>
                     <td>
-                      <img src={item.imageURL} height="80" width="80" />
+                      <img src={item.imageURL} height="80" width="80" alt="" />
                     </td>
 
                     <td>{item.name}</td>
@@ -293,7 +293,7 @@ function AdminPage() {
                     return (
                       <tr>
                         <td>
-                          <img src={item.imageURL} height="80" width="80" />
+                          <img src={item.imageURL} height="80" width="80" alt=""/>
                         </td>
 
                         <td>{item.name}</td>

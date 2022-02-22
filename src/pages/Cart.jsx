@@ -61,6 +61,7 @@ function Cart() {
       })
       setLoading(false);
       handleClose();
+      console.log(result);
     } catch (error) {
       setLoading(false);
       Swal.fire({
@@ -72,6 +73,7 @@ function Cart() {
       })
     }
   };
+  
 
 
   return (

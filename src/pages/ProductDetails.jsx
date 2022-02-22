@@ -15,7 +15,7 @@ function ProductDetail() {
   
   useEffect(() => {
     getData()
-  }, []);
+  });
 
   async function getData() {
     try {

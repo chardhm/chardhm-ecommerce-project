@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Layout from "../components/Layout";
-import { collection, addDoc, getDocs } from "firebase/firestore";
+import { collection, getDocs } from "firebase/firestore";
 import fireDB from "../fireConfig";
 
 
@@ -8,6 +8,7 @@ function Orders() {
   const [orders, setOrders] = useState([]);
   const [loading, setLoading] = useState(false);
   const userid = JSON.parse(localStorage.getItem('currentUser')).user.uid
+  console.log(userid);
   useEffect(() => {
     getData();
   }, []);
@@ -49,7 +50,7 @@ function Orders() {
                 return (
                   <tr>
                     <td>
-                      <img src={item.imageURL} height="80" width="80" />
+                      <img src={item.imageURL} height="80" width="80" alt=""/>
                     </td>
 
                     <td>{item.name}</td>
