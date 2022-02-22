@@ -1,0 +1,83 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.navbar {
+    background-color: rgb(31, 134, 182) !important;
+}
+
+.navbar-brand {
+    color: white !important;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: white !important;
+    cursor: pointer;
+}
+
+.content {
+    padding-top: 80px;
+}
+
+.footer {
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(63, 148, 177, 0.808);
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+button {
+    background-color: rgba(63, 148, 177, 0.808);
+    box-shadow: none;
+    border: 1px solid rgba(255, 255, 255, 0.466);
+    color: white;
+    padding: 5px;
+    font-weight: bold !important;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: rgb(26, 142, 180);
+}
+
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.spinner-border {
+    height: 100px;
+    width: 100px;
+}
+
+a {
+    text-decoration: none;
+}
+
+input,
+select {
+    height: 35px !important;
+}
+
+#uncontrolled-tab-example-tab-products {
+    color: black !important;
+}
+
+.nav-item button {
+    color: black !important;
+}
+
+.nav-tabs {
+    background-color: rgb(255, 255, 255) !important;
+}
