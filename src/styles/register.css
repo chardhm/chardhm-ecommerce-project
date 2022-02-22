@@ -1,8 +1,8 @@
-.from-control {
+.form-control {
   box-shadow: none;
 }
 
-.from-control:focus {
+.form-control:focus {
   margin-top: 15px !important;
   box-shadow: none !important;
 }

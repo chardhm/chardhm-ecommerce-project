@@ -58,7 +58,7 @@ function Register() {
             <div className="form-group input-group">
               <div className="input-group-prepend">
                 <span className="input-group-text">
-                  <img src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/64/000000/external-email-interface-kiranshastry-lineal-kiranshastry.png" width="28" alt="" />
+                  <img src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/64/000000/external-email-interface-kiranshastry-lineal-kiranshastry.png" width="21" alt="" />
                 </span>
               </div>
               <input name="" className="form-control" placeholder="Email address" type="email" value={email} onChange={(e) => { setEmail(e.target.value) }} />
@@ -67,7 +67,7 @@ function Register() {
             <div className="form-group input-group">
               <div className="input-group-prepend">
                 <span className="input-group-text">
-                  <img src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/50/000000/external-padlock-interface-kiranshastry-lineal-kiranshastry.png" width="28" alt="" />
+                  <img src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/50/000000/external-padlock-interface-kiranshastry-lineal-kiranshastry.png" width="21" alt="" />
                 </span>
               </div>
               <input className="form-control" placeholder="Create password" type="password" value={password} onChange={(e) => { setPassword(e.target.value) }} />
@@ -76,7 +76,7 @@ function Register() {
             <div className="form-group input-group">
               <div className="input-group-prepend">
                 <span className="input-group-text">
-                  <img src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/50/000000/external-padlock-interface-kiranshastry-lineal-kiranshastry.png" width="28" alt="" />
+                  <img src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/50/000000/external-padlock-interface-kiranshastry-lineal-kiranshastry.png" width="21" alt="" />
                 </span>
               </div>
               <input className="form-control" placeholder="Confirm password" type="password" value={cpassword} onChange={(e) => { setCpassword(e.target.value) }} />

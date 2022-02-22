@@ -8,9 +8,9 @@ import { useDispatch, useSelector } from 'react-redux';
 function ProductDetail() {
 
   const [product, setProduct] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const dispatch = useDispatch();
+  /* const [loading, setLoading] = useState(false); */
   const { cartItems } = useSelector((state) => state.cartReducer);
+  const dispatch = useDispatch();
   const params = useParams();
   
   useEffect(() => {
@@ -19,14 +19,14 @@ function ProductDetail() {
 
   async function getData() {
     try {
-      setLoading(true);
+     // setLoading(true);
       const productTemp = await getDoc(doc(fireDB, "products", params.productid))
       //console.log(productTemp.data())
       setProduct(productTemp.data());
-      setLoading(false);
+     // setLoading(true);
     } catch (error) {
       console.log(error);
-      setLoading(false);
+     // setLoading(false);
     }
   }
 
@@ -38,7 +38,7 @@ function ProductDetail() {
   }, [cartItems]);
 
   return (
-  <Layout loading={loading}>
+  <Layout /* loading={loading} */>
       <div className='container'>
         <div className="row justify-content-center">
           <div className="col-md-8">
